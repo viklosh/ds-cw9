@@ -17,5 +17,5 @@ tasks:
   lineinfile:
     path: /var/www/html/index.nginx-debian.html
     regexp: <h1>Welcome to nginx!</h1>
-    line: d<script> document.write(new Date().toLocaleDateString()); </script>
+    line: <script> document.write(new Date().toLocaleDateString()); </script>
     state: present
